@@ -37,7 +37,7 @@ namespace TempleToursProject
             });
 
             //each session is going to get it's own scoped version of the database 
-            services.AddScoped<ITourRepository, EFBookRepository>();
+            services.AddScoped<ITourRepository, EFTourRepository>();
 
             //adding Razor Pages.. also added endpoint below
             services.AddRazorPages();

@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-// EFBookRepository
+// EFTourRepository
 namespace TempleToursProject.Models
 {
-    public class EFBookRepository : ITourRepository
+    public class EFTourRepository : ITourRepository
     {
         private TourDbContext _context;
 
         //Constructor
-        public EFBookRepository (TourDbContext context)
+        public EFTourRepository (TourDbContext context)
         {
             _context = context;
         }
