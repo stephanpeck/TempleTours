@@ -1189,19 +1189,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\steph\\.nuget\\packages\\": {}
+    "C:\\Users\\Devyn\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\steph\\Documents\\GitHub\\TempleTours\\TempleToursProject.csproj",
+      "projectUniqueName": "C:\\Users\\Devyn\\Source\\Repos\\TempleTours\\TempleToursProject.csproj",
       "projectName": "TempleToursProject",
-      "projectPath": "C:\\Users\\steph\\Documents\\GitHub\\TempleTours\\TempleToursProject.csproj",
-      "packagesPath": "C:\\Users\\steph\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\steph\\Documents\\GitHub\\TempleTours\\obj\\",
+      "projectPath": "C:\\Users\\Devyn\\Source\\Repos\\TempleTours\\TempleToursProject.csproj",
+      "packagesPath": "C:\\Users\\Devyn\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Devyn\\Source\\Repos\\TempleTours\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\steph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Devyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
