@@ -1189,19 +1189,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Devyn\\.nuget\\packages\\": {}
+    "C:\\Users\\Joshie Poo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Devyn\\Source\\Repos\\TempleTours\\TempleToursProject.csproj",
+      "projectUniqueName": "C:\\Users\\Joshie Poo\\Source\\Repos\\TempleTours\\TempleToursProject.csproj",
       "projectName": "TempleToursProject",
-      "projectPath": "C:\\Users\\Devyn\\Source\\Repos\\TempleTours\\TempleToursProject.csproj",
-      "packagesPath": "C:\\Users\\Devyn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Devyn\\Source\\Repos\\TempleTours\\obj\\",
+      "projectPath": "C:\\Users\\Joshie Poo\\Source\\Repos\\TempleTours\\TempleToursProject.csproj",
+      "packagesPath": "C:\\Users\\Joshie Poo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Joshie Poo\\Source\\Repos\\TempleTours\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Devyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Joshie Poo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1266,7 +1266,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -253,3 +253,35 @@ C:\Users\Devyn\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProje
 C:\Users\Devyn\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.dll
 C:\Users\Devyn\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.pdb
 C:\Users\Devyn\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.genruntimeconfig.cache
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.csprojAssemblyReference.cache
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.AssemblyInfoInputs.cache
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.AssemblyInfo.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.csproj.CoreCompileInputs.cache
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.RazorAssemblyInfo.cache
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.RazorAssemblyInfo.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\staticwebassets\TempleToursProject.StaticWebAssets.Manifest.cache
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\staticwebassets\TempleToursProject.StaticWebAssets.xml
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\scopedcss\bundle\TempleToursProject.styles.css
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.TagHelpers.input.cache
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.TagHelpers.output.cache
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.RazorCoreGenerate.cache
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Pages\Buy.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_CartLayout.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Home\Tours.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CartSummary\Default.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\NavigationMenu\Default.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Shared\TourSummary.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.RazorTargetAssemblyInfo.cache
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.RazorTargetAssemblyInfo.cs
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.dll
+C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.pdb
