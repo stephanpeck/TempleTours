@@ -9,11 +9,11 @@ namespace TempleToursProject.Models
     {
         public List<CartLine> Lines { get; set; } = new List<CartLine>();
 
-        public virtual void AddItem (BookModel bookMod, int qty)
+        public virtual void AddItem (GroupInfo groupInfo, int qty)
         {
             //build a new instance of the object
             CartLine line = Lines
-                .Where(b => b.BookModel.BookID == bookMod.BookID)
+                .Where(b => b.GroupInfo.GroupInfoId == groupInfo.GroupInfoId)
                 .FirstOrDefault();
 
             //didnt return any results in the list that matched (The item was Not already in their cart)
@@ -21,7 +21,7 @@ namespace TempleToursProject.Models
             {
                 Lines.Add(new CartLine
                 {
-                    BookModel = bookMod,
+                    GroupInfo = groupInfo,
                     Quantity = qty
                 });
             }
@@ -32,24 +32,28 @@ namespace TempleToursProject.Models
             }
         }
         //removing from the cart
-        public virtual void RemoveLine(BookModel bookMod) =>
-            Lines.RemoveAll(x => x.BookModel.BookID == bookMod.BookID);
+        /*
+        public virtual void RemoveLine(GroupInfo groupInfo) =>
+            Lines.RemoveAll(x => x.BookModel.BookID == groupInfo.GroupInfoId);
 
         public virtual void Clear() => Lines.Clear();
+        */
 
 
         //little different than videos, double check if errors
+        /*
         public double ComputeTotalSum()
         {
             return Lines.Sum(e => e.BookModel.Price * e.Quantity);
         }
+        */
 
 
         //In C#, we can build a class within a class
         public class CartLine
         {
             public int CartLineID { get; set; }
-            public BookModel BookModel { get; set; }
+            public GroupInfo GroupInfo { get; set; }
             public int Quantity { get; set; }
         }
 

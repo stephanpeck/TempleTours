@@ -9,7 +9,7 @@ namespace TempleToursProject.Models.ViewModels
 {
     public class TourListViewModel
     {
-        public IEnumerable<BookModel> BookModels { get; set; }
+        public IEnumerable<GroupInfo> Groups { get; set; }
         public PagingInfo PagingInfo { get; set; }
         public string CurrentCategory { get; set; }
     }

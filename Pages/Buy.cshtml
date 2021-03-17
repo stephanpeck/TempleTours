@@ -13,7 +13,6 @@
 
 <table class="table table-hover">
 
-
     <thead>
         <tr>
             <th scope="col">Book</th>
@@ -27,16 +26,15 @@
         @foreach (var line in Model.Cart.Lines)
         {
         <tr>
-            <td class="text-left">@line.BookModel.Title</td>
+            <td class="text-left">@line.GroupInfo.GroupName</td>
             <td class="text-left">@line.Quantity</td>
-            <td class="text-left">@line.BookModel.Price</td>
-            <td class="text-left">@((line.Quantity * line.BookModel.Price).ToString("c"))</td>
+            <td class="text-left">@line.GroupInfo.GroupSize</td>
 
             @* Remove from Cart -- From Freeman Textbook Ch.9 *@
             <td class="text-center">
                 <form asp-page-handler="Remove" method="post">
                     <input type="hidden" name="BookID"
-                           value="@line.BookModel.BookID" />
+                           value="@line.GroupInfo.GroupInfoId" />
                     <input type="hidden" name="returnUrl"
                            value="@Model.ReturnUrl" />
                     <button type="submit" class="btn btn-sm btn-danger">
@@ -55,7 +53,6 @@
     <tfoot>
         <tr>
             <td colspan="3" class="text-right"><b>Total:</b></td>
-            <td class="text-left">@Model.Cart.ComputeTotalSum().ToString("c")</td>
         </tr>
     </tfoot>
 

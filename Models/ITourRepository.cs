@@ -7,6 +7,6 @@ namespace TempleToursProject.Models
 {
     public interface ITourRepository
     {
-        IQueryable<BookModel> Books { get; }
+        IQueryable<GroupInfo> Groups { get; }
     }
 }

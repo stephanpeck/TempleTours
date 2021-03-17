@@ -21,10 +21,10 @@ namespace TempleToursProject.Components
             ViewBag.SelectedCategory = RouteData?.Values["category"];
 
             //dynamically adds a new category for books
-            return View(repository.Books
-                .Select(x => x.Category)
+            return View(repository.Groups
+                /*.Select(x => x.Category)
                 .Distinct()
-                .OrderBy(x => x)
+                .OrderBy(x => x)*/
                 
                 );
         }

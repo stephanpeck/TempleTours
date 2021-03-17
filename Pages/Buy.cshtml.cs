@@ -45,13 +45,13 @@ namespace TempleToursProject.Pages
 
 
 
-        public IActionResult OnPost(long bookID, string returnUrl)
+        public IActionResult OnPost(long groupId, string returnUrl)
         {
-            BookModel bookModel = repository.Books.FirstOrDefault(b => b.BookID == bookID);
+            GroupInfo groupInfo = repository.Groups.FirstOrDefault(b => b.GroupInfoId == groupId);
 
             //Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
 
-            Cart.AddItem(bookModel, 1);
+            Cart.AddItem(groupInfo, 1);
 
             //HttpContext.Session.SetJson("cart", Cart);
 
@@ -60,13 +60,13 @@ namespace TempleToursProject.Pages
         }
 
         //REMOVING FROM CART -- from Textbook
-        public IActionResult OnPostRemove(long bookID, string returnUrl)
+        /*public IActionResult OnPostRemove(long bookID, string returnUrl)
         {
             
             Cart.RemoveLine(Cart.Lines.First(cl =>
             cl.BookModel.BookID == bookID).BookModel);
             return RedirectToPage(new { returnUrl = returnUrl });
-        }
+        }*/
 
 
     }

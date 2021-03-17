@@ -19,15 +19,15 @@ namespace TempleToursProject.Models
         }
         [JsonIgnore]
         public ISession Session { get; set; }
-        public override void AddItem(BookModel bookModel, int qty)
+        public override void AddItem(GroupInfo groupInfo, int qty)
         {
-            base.AddItem(bookModel, qty);
+            base.AddItem(groupInfo, qty);
             Session.SetJson("Cart", this);
         }
-        
-        public override void RemoveLine(BookModel bookModel)
+        /*
+        public override void RemoveLine(GroupInfo groupInfo)
         {
-            base.RemoveLine(bookModel);
+            base.RemoveLine(groupInfo);
             Session.SetJson("Cart", this);
         }
         public override void Clear()
@@ -35,5 +35,6 @@ namespace TempleToursProject.Models
             base.Clear();
             Session.Remove("Cart");
         }
+        */
     }
 }

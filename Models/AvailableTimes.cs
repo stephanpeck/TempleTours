@@ -7,6 +7,8 @@ namespace TempleToursProject.Models
 {
     public class AvailableTimes
     {
+        public string Day { get; set; }
 
+        public string Time { get; set; }
     }
 }

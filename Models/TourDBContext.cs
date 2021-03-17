@@ -14,6 +14,6 @@ namespace TempleToursProject.Models
 
         }
 
-        public DbSet<BookModel> BookModels { get; set; }
+        public DbSet<GroupInfo> GroupInfo { get; set; }
     }
 }

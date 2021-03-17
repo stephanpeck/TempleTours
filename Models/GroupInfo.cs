@@ -8,6 +8,9 @@ namespace TempleToursProject.Models
 {
     public class GroupInfo
     {
+        [Key]
+        public int GroupInfoId { get; set; }
+
         [Required]
         public string GroupName { get; set; }
 
