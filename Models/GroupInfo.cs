@@ -12,7 +12,7 @@ namespace TempleToursProject.Models
         public string GroupName { get; set; }
 
         [Required]
-        public string GroupSize { get; set; }
+        public int GroupSize { get; set; }
 
         [Required]
         public string Email { get; set; }

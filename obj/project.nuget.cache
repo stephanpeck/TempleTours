@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sG/nAIu6FTpPKdVsxtkzGL78+czEH+pu9YwmpVAgW4koGMWHo3lXqztMw290gpACwKmesBF3X5SZTgu2ziInHQ==",
+  "dgSpecHash": "8zyNKZmWy6rHojlFTTx8xmSFVgtZsQ4ww8KocilFLh7VBU+ULMqX1yQAl5rIW4FFetu74iZHws8vvRUwxisVdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Joshie Poo\\source\\repos\\TempleTours\\TempleToursProject.csproj",
+  "projectFilePath": "C:\\Users\\Joshie Poo\\Source\\Repos\\TempleTours\\TempleToursProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joshie Poo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Joshie Poo\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
