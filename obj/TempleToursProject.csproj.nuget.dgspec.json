@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joshie Poo\\Source\\Repos\\TempleTours\\TempleToursProject.csproj": {}
+    "C:\\Users\\Joshie Poo\\source\\repos\\TempleTours\\TempleToursProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joshie Poo\\Source\\Repos\\TempleTours\\TempleToursProject.csproj": {
+    "C:\\Users\\Joshie Poo\\source\\repos\\TempleTours\\TempleToursProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joshie Poo\\Source\\Repos\\TempleTours\\TempleToursProject.csproj",
+        "projectUniqueName": "C:\\Users\\Joshie Poo\\source\\repos\\TempleTours\\TempleToursProject.csproj",
         "projectName": "TempleToursProject",
-        "projectPath": "C:\\Users\\Joshie Poo\\Source\\Repos\\TempleTours\\TempleToursProject.csproj",
+        "projectPath": "C:\\Users\\Joshie Poo\\source\\repos\\TempleTours\\TempleToursProject.csproj",
         "packagesPath": "C:\\Users\\Joshie Poo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joshie Poo\\Source\\Repos\\TempleTours\\obj\\",
+        "outputPath": "C:\\Users\\Joshie Poo\\source\\repos\\TempleTours\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Joshie Poo\\AppData\\Roaming\\NuGet\\NuGet.Config",
