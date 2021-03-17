@@ -253,7 +253,6 @@ C:\Users\Devyn\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProje
 C:\Users\Devyn\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.dll
 C:\Users\Devyn\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.pdb
 C:\Users\Devyn\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.genruntimeconfig.cache
-C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.csprojAssemblyReference.cache
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.AssemblyInfoInputs.cache
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.AssemblyInfo.cs
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.csproj.CoreCompileInputs.cache
