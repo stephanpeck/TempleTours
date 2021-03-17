@@ -17,5 +17,6 @@ namespace TempleToursProject.Models
 
         //This determines what tables are created in the database
         public DbSet<GroupInfo> GroupInfo { get; set; }
+        public DbSet<TimeSlots> TimeSlots { get; set; }
     }
 }

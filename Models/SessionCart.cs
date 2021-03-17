@@ -24,18 +24,5 @@ namespace TempleToursProject.Models
             base.AddItem(groupInfo, qty);
             Session.SetJson("Cart", this);
         }
-        //These methods are not required for this project --Josh
-        /*
-        public override void RemoveLine(GroupInfo groupInfo)
-        {
-            base.RemoveLine(groupInfo);
-            Session.SetJson("Cart", this);
-        }
-        public override void Clear()
-        {
-            base.Clear();
-            Session.Remove("Cart");
-        }
-        */
     }
 }

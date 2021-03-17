@@ -8,5 +8,7 @@ namespace TempleToursProject.Models
     public interface ITourRepository
     {
         IQueryable<GroupInfo> Groups { get; }
+
+        IQueryable<TimeSlots> TimeSlots { get; }
     }
 }
