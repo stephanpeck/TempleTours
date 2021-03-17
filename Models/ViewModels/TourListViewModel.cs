@@ -11,7 +11,8 @@ namespace TempleToursProject.Models.ViewModels
     {
         public IEnumerable<GroupInfo> Groups { get; set; }
         public AvailableTimes AvailableTimes { get; set; }
-        public PagingInfo PagingInfo { get; set; }
-        public string CurrentCategory { get; set; }
+
+        //public PagingInfo PagingInfo { get; set; }
+        //public string CurrentCategory { get; set; }
     }
 }
