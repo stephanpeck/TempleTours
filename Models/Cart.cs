@@ -31,22 +31,6 @@ namespace TempleToursProject.Models
                 line.Quantity += qty;
             }
         }
-        //removing from the cart
-        /*
-        public virtual void RemoveLine(GroupInfo groupInfo) =>
-            Lines.RemoveAll(x => x.BookModel.BookID == groupInfo.GroupInfoId);
-
-        public virtual void Clear() => Lines.Clear();
-        */
-
-
-        //little different than videos, double check if errors
-        /*
-        public double ComputeTotalSum()
-        {
-            return Lines.Sum(e => e.BookModel.Price * e.Quantity);
-        }
-        */
 
 
         //In C#, we can build a class within a class

@@ -22,12 +22,30 @@ namespace TempleToursProject.Migrations
                 {
                     table.PrimaryKey("PK_GroupInfo", x => x.GroupInfoId);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "TimeSlots",
+                columns: table => new
+                {
+                    TimeSlotsId = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    TimeSlotDay = table.Column<string>(nullable: true),
+                    TimeSlotTime = table.Column<string>(nullable: true),
+                    Scheduled = table.Column<bool>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TimeSlots", x => x.TimeSlotsId);
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
                 name: "GroupInfo");
+
+            migrationBuilder.DropTable(
+                name: "TimeSlots");
         }
     }
 }

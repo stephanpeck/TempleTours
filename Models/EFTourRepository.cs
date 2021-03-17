@@ -18,5 +18,6 @@ namespace TempleToursProject.Models
 
         //Dbs set from TourDbContext.cs
         public IQueryable<GroupInfo> Groups => _context.GroupInfo;
+        public IQueryable<TimeSlots> TimeSlots => _context.TimeSlots;
     }
 }

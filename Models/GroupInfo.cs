@@ -17,6 +17,7 @@ namespace TempleToursProject.Models
         public string GroupName { get; set; }
 
         [Required]
+        [Range(1,50)]
         public int GroupSize { get; set; }
 
         [Required]

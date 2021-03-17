@@ -14,6 +14,7 @@ namespace TempleToursProject.Infrastructure
     //Just like we did asp-action, this is similar with the page-model, we will refer to it this way, this will apply to div's
 
     //I changed from div to li in order to make it look better with Bootstrap
+    /*
     [HtmlTargetElement("div", Attributes = "page-model")]
     public class PageLinkTagHelper : TagHelper
     {
@@ -28,7 +29,7 @@ namespace TempleToursProject.Infrastructure
         [ViewContext]
         [HtmlAttributeNotBound]
         public ViewContext ViewContext { get; set; }
-        public PagingInfo PageModel { get; set; }
+        //public PagingInfo PageModel { get; set; }
         public string PageAction { get; set; }
 
         [HtmlAttributeName(DictionaryAttributePrefix = "page-url-")]
@@ -76,5 +77,5 @@ namespace TempleToursProject.Infrastructure
 
         }
 
-    }
+    } */
 }
