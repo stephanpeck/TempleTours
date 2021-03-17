@@ -14,10 +14,15 @@ label {
 
 input.form {
     width: 20px;
+    
 }
 
 container {
     width: 400px;
     margin: 0 auto;
     background-color: #66ffff;
+}
+
+input {
+    border-radius: 25px;
 }
