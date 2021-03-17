@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 //DBContext page
 namespace TempleToursProject.Models
 {
+    
     public class TourDbContext : DbContext
     {
         public TourDbContext (DbContextOptions<TourDbContext> options) : base (options)
@@ -14,6 +15,7 @@ namespace TempleToursProject.Models
 
         }
 
+        //This determines what tables are created in the database
         public DbSet<GroupInfo> GroupInfo { get; set; }
     }
 }

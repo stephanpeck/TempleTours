@@ -12,6 +12,7 @@ namespace TempleToursProject.Models
     {
         public static void EnsurePopulated (IApplicationBuilder application)
         {
+        //This has been commented out because I am not sure whether or not it is necessary for this project. --Josh
             /*
             TourDbContext context = application.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<TourDbContext>();
 

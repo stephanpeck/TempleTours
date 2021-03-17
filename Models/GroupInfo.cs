@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace TempleToursProject.Models
 {
+    //Class for the group info
     public class GroupInfo
     {
+        //Primary key for the Group Info 
         [Key]
         public int GroupInfoId { get; set; }
 
@@ -20,7 +22,10 @@ namespace TempleToursProject.Models
         [Required]
         public string Email { get; set; }
 
+        //Phone is the only property that is not required to be entered.
         public string Phone { get; set; }
+
+        public string SelectedAppointment { get; set; }
 
     }
 }

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace TempleToursProject.Models
 {
+    //Class for all available time slots to be used in the view where the user will select which time they would like to schedule an appointment for.
     public class AvailableTimes
     {
         public string Day1Time8am { get; set; } = "Monday at 8 am";
