@@ -58,7 +58,7 @@ namespace TempleToursProject.Controllers
                 SelectedAppointmentTime = SelectedTimeSlot.ToShortDateString()
 
 
-            }) ;
+            });
         }
 
 
