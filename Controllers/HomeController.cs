@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using TempleToursProject.Models.ViewModels;
+using TempleToursProject.Models;
 
 
 //Home controller
@@ -33,12 +34,21 @@ namespace TempleToursProject.Controllers
             return View();
         }
 
-
+        [HttpGet]
         public IActionResult Tours()
         {
+
+
+
+
             return View();
         }
 
+        [HttpPost]
+        public IActionResult TourSummary()
+        {
+            return View();
+        }
 
 
         //if no page parameter is passed in, set to 1

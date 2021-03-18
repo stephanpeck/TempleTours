@@ -1,28 +1,48 @@
 ﻿
 
 
-@model GroupInfo
+@*@model GroupInfo
+@model TimeSlots*@
+
+@model GroupTimeSlotCombo
 
 
 
-<tr>
-    <td>@Model.GroupInfoId</td>
-    <td><b>@Model.GroupName</b></td>
-    <td>@Model.GroupSize</td>
-    <td>@Model.Email</td>
-    <td>@Model.Phone</td>
+
+<div asp-validation-summary="All"></div>
+<form id="@Model.GroupInfo.GroupInfoId" asp-page="/Buy" method="post">
+
+    <!--Submitter Name-->
+    <label for="name" asp-for="GroupInfo.GroupInfoId"><b>Your Name:</b></label>
+    <input class="form-control" style="width:30%;" type="text" id="name" asp-for="GroupInfo.GroupInfoId" placeholder="Buck Wheat" required><br><br>
+
+    <!--Restaurant Name-->
+    <label for="restaurantName" asp-for="GroupInfo.GroupName"><b>Group Name:</b></label>
+    <input class="form-control" style="width:30%;" type="text" id="groupName" asp-for="GroupInfo.GroupName" placeholder="Chick-Fil-A" required><br><br>
 
 
-    <td>
-        <form id="@Model.GroupInfoId" asp-page="/Buy" method="post">
-            <input type="hidden" asp-for="GroupInfoId" />
-            <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
-            <span class="card-text p-1">
-                @*@Model.Category*@
-                <button type="submit" class="btn-success btn-sm pull-right" style="float:right">
-                    Buy
-                </button>
-            </span>
-        </form>
-    </td>
-</tr>
+    <!--favoriteDish-->
+    <label for="favoriteDish" asp-for="GroupInfo.GroupSize"><b>Group Size:</b></label>
+    <input class="form-control" style="width:30%;" type="text" id="groupSize" asp-for="GroupInfo.GroupSize" placeholder="Chicken Sandwhich" required><br><br>
+
+
+    <label for="favoriteDish" asp-for="GroupInfo.Email"><b>Email:</b></label>
+    <input class="form-control" style="width:30%;" type="text" id="email" asp-for="GroupInfo.Email" placeholder="Chicken Sandwhich" required><br><br>
+
+    <!--phone-->
+    <label for="phone" asp-for="GroupInfo.Phone"><b>Phone Number:</b></label>
+    <input class="form-control" style="width:30%;" type="tel" id="phone" asp-for="GroupInfo.Phone" placeholder="801-555-5555" required><br><br>
+
+
+    <label for="favoriteDish" asp-for="GroupInfo.SelectedAppointmentDay"><b>Selected Day:</b></label>
+    <input class="form-control" style="width:30%;" type="text" id="Time Slot" asp-for="GroupInfo.SelectedAppointmentDay" value="@Model.TimeSlots.TimeSlotDay" placeholder="8pm" required><br><br>
+
+    <label for="favoriteDish" asp-for="GroupInfo.SelectedAppointmentTime"><b>Selected Time:</b></label>
+    <input class="form-control" style="width:30%;" type="text" id="Time Slot" asp-for="GroupInfo.SelectedAppointmentTime" value="@Model.TimeSlots.TimeSlotDay" placeholder="8pm" required><br><br>
+    <br>
+
+
+    <!--Submit-->
+    <input class="btn btn-info" type="submit" value="Confirm Tour" id="submit" />
+
+</form>
