@@ -511,3 +511,4 @@ C:\Users\steph\OneDrive - studentbody.byu.edu\BYU\2021\Winter - Junior Core\IS 4
 C:\Users\steph\OneDrive - studentbody.byu.edu\BYU\2021\Winter - Junior Core\IS 413 - Hilton\TempleTours\TempleTours-master\obj\Debug\netcoreapp3.1\TempleToursProject.dll
 C:\Users\steph\OneDrive - studentbody.byu.edu\BYU\2021\Winter - Junior Core\IS 413 - Hilton\TempleTours\TempleTours-master\obj\Debug\netcoreapp3.1\TempleToursProject.pdb
 C:\Users\steph\OneDrive - studentbody.byu.edu\BYU\2021\Winter - Junior Core\IS 413 - Hilton\TempleTours\TempleTours-master\obj\Debug\netcoreapp3.1\TempleToursProject.genruntimeconfig.cache
+C:\Users\steph\Source\Repos\TempleToursCombo\bin\Debug\netcoreapp3.1\package-lock.json

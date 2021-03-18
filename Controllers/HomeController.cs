@@ -54,8 +54,8 @@ namespace TempleToursProject.Controllers
 
             return View(new GroupInfo
             {
-                SelectedAppointmentDay = SelectedTimeSlot.ToShortTimeString(),
-                SelectedAppointmentTime = SelectedTimeSlot.ToShortDateString()
+                SelectedAppointmentDay = SelectedTimeSlot.ToShortDateString(),
+                SelectedAppointmentTime = SelectedTimeSlot.ToShortTimeString()
 
 
             });
