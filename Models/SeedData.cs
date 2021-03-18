@@ -665,6 +665,7 @@ namespace TempleToursProject.Models
                     }
                 );
 
+                //Save changes to the database
                 context.SaveChanges();
 
             }
