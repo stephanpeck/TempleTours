@@ -38,10 +38,10 @@
                     <table>
                         @foreach (var x in Model.TimeSlots)
                         {
-                            @if (x.TimeSlotDay == "Monday")
+                            @if (x.TimeSlot.ToString("d") == "3/22/2021")
                             {
                             <tr>
-                                <td>@x.TimeSlotTime</td>
+                                <td>@(x.TimeSlot.ToString("t"))</td>
                                 <td><button class="btn-primary">Submit</button></td>
                             </tr>
                             }

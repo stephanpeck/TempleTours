@@ -40,7 +40,7 @@ namespace TempleToursProject.Controllers
             return View(new GroupTimeSlotCombo
             {
                 TimeSlots = _repository.TimeSlots
-                    .OrderBy(p => p.TimeSlotTime)
+                    .OrderBy(p => p.TimeSlot)
             });
         }
 
