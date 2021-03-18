@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TempleToursProject.Migrations
 {
@@ -30,8 +31,7 @@ namespace TempleToursProject.Migrations
                 {
                     TimeSlotsId = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    TimeSlotDay = table.Column<string>(nullable: true),
-                    TimeSlotTime = table.Column<string>(nullable: true),
+                    TimeSlot = table.Column<DateTime>(nullable: false),
                     Scheduled = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
