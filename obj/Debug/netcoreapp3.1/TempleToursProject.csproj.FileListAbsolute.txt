@@ -423,3 +423,4 @@ C:\Users\steph\Source\Repos\TempleToursCombo\obj\Debug\netcoreapp3.1\TempleTours
 C:\Users\steph\Source\Repos\TempleToursCombo\obj\Debug\netcoreapp3.1\TempleToursProject.dll
 C:\Users\steph\Source\Repos\TempleToursCombo\obj\Debug\netcoreapp3.1\TempleToursProject.pdb
 C:\Users\steph\Source\Repos\TempleToursCombo\obj\Debug\netcoreapp3.1\TempleToursProject.genruntimeconfig.cache
+C:\Users\steph\Source\Repos\TempleToursCombo\bin\Debug\netcoreapp3.1\package-lock.json
