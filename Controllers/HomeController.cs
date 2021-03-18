@@ -58,7 +58,7 @@ namespace TempleToursProject.Controllers
 
         //timeSlot is posted from Tour View
         [HttpPost]
-        public IActionResult TourSummary(DateTime SelectedTimeSlot, int TimeSlotId)
+        public IActionResult TourSummary(DateTime SelectedTimeSlot)
         {
             //_repository.TimeSlots.TimeSlotId
 
