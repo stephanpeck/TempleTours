@@ -98,19 +98,28 @@
             </div>
 
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                    <table>
+                <div class="card-body" style="column-count:2">
+                   
                         @foreach (var x in Model.TimeSlots)
                         {
-                            @if (x.TimeSlotDay == "Monday")
-                            {
-                                <tr>
-                                    <td>@x.TimeSlotTime</td>
-                                    <td><button class="btn-primary open-button" onclick="openForm()">Schedule</button></td>
-                                </tr>
-                            }
+                            
+                                @if (x.TimeSlot.ToString("d") == "3/22/2021")
+                                {
+                                
+                                    <form asp-action="TourSummary" method="post">
+                                        <label asp-for="GroupInfo.SelectedAppointmentDay">@x.TimeSlot.ToShortTimeString()</label>
+                                        <!--You can unhide this... it just shows the date multiple times, not super necessary-->
+                                        <input asp-for="GroupInfo.SelectedAppointmentDay" value="@x.TimeSlot" name="SelectedTimeSlot" readonly hidden >
+                                        <input class="btn btn-info" type="submit" value="Select Time" id="submit" />
+                                    </form>
+                                    <br/>
+
+                                                                  
+                                }
+                           
+
                         }
-                    </table>
+                   
                 </div>
             </div>
         </div>
@@ -125,19 +134,31 @@
             </div>
 
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                    <table>
+                <div class="card-body" style="column-count:2">
+                   
                         @foreach (var x in Model.TimeSlots)
                         {
-                            @if (x.TimeSlotDay == "Tuesday")
-                            {
-                                <tr>
-                                    <td>@x.TimeSlotTime</td>
-                                    <td><button class="btn-primary">Submit</button></td>
-                                </tr>
-                            }
+                            
+                            
+                                @if (x.TimeSlot.ToString("d") == "3/23/2021")
+                                {
+                                
+                                    <form asp-action="TourSummary" method="post">
+                                        <label asp-for="GroupInfo.SelectedAppointmentDay">@x.TimeSlot.ToShortTimeString()</label>
+                                        <!--You can unhide this... it just shows the date multiple times, not super necessary-->
+                                        <!--The Time Slot ID is there so that eventually you can track the selected timeslots-->
+                                        <input asp-for="@x.TimeSlotsId" name="TimeSlotId" hidden/>
+                                        <input asp-for="GroupInfo.SelectedAppointmentDay" value="@x.TimeSlot" name="SelectedTimeSlot" readonly hidden >
+                                        <input class="btn btn-info" type="submit" value="Select Time" id="submit" />
+                                    </form>
+                                    <br/>
+
+                                                                  
+                                }
+                            
+
                         }
-                    </table>
+                   
                 </div>
             </div>
         </div>
@@ -152,19 +173,28 @@
             </div>
 
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                    <table>
+                <div class="card-body" style="column-count:2">
+                   
                         @foreach (var x in Model.TimeSlots)
                         {
-                            @if (x.TimeSlotDay == "Wednesday")
-                            {
-                                <tr>
-                                    <td>@x.TimeSlotTime</td>
-                                    <td><button class="btn-primary">Submit</button></td>
-                                </tr>
-                            }
+                            
+                                @if (x.TimeSlot.ToString("d") == "3/24/2021")
+                                {
+                                
+                                    <form asp-action="TourSummary" method="post">
+                                        <label asp-for="GroupInfo.SelectedAppointmentDay">@x.TimeSlot.ToShortTimeString()</label>
+                                        <!--You can unhide this... it just shows the date multiple times, not super necessary-->
+                                        <input asp-for="GroupInfo.SelectedAppointmentDay" value="@x.TimeSlot" name="SelectedTimeSlot" readonly hidden >
+                                        <input class="btn btn-info" type="submit" value="Select Time" id="submit" />
+                                    </form>
+                                    <br/>
+
+                                                                  
+                                }
+                            
+
                         }
-                    </table>
+                   
                 </div>
             </div>
         </div>
@@ -179,19 +209,28 @@
             </div>
 
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                <div class="card-body">
-                    <table>
+                <div class="card-body" style="column-count:2">
+                   
                         @foreach (var x in Model.TimeSlots)
                         {
-                            @if (x.TimeSlotDay == "Thursday")
-                            {
-                                <tr>
-                                    <td>@x.TimeSlotTime</td>
-                                    <td><button class="btn-primary">Submit</button></td>
-                                </tr>
-                            }
+                            
+                                @if (x.TimeSlot.ToString("d") == "3/25/2021")
+                                {
+                                
+                                    <form asp-action="TourSummary" method="post">
+                                        <label asp-for="GroupInfo.SelectedAppointmentDay">@x.TimeSlot.ToShortTimeString()</label>
+                                        <!--You can unhide this... it just shows the date multiple times, not super necessary-->
+                                        <input asp-for="GroupInfo.SelectedAppointmentDay" value="@x.TimeSlot" name="SelectedTimeSlot" readonly hidden >
+                                        <input class="btn btn-info" type="submit" value="Select Time" id="submit" />
+                                    </form>
+                                    <br/>
+
+                                                                  
+                                }
+                            
+
                         }
-                    </table>
+                   
                 </div>
             </div>
         </div>
@@ -206,19 +245,28 @@
             </div>
 
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                <div class="card-body">
-                    <table>
+                <div class="card-body" style="column-count:2">
+                   
                         @foreach (var x in Model.TimeSlots)
                         {
-                            @if (x.TimeSlotDay == "Friday")
-                            {
-                                <tr>
-                                    <td>@x.TimeSlotTime</td>
-                                    <td><button class="btn-primary">Submit</button></td>
-                                </tr>
-                            }
+                            
+                                @if (x.TimeSlot.ToString("d") == "3/26/2021")
+                                {
+                                
+                                    <form asp-action="TourSummary" method="post">
+                                        <label asp-for="GroupInfo.SelectedAppointmentDay">@x.TimeSlot.ToShortTimeString()</label>
+                                        <!--You can unhide this... it just shows the date multiple times, not super necessary-->
+                                        <input asp-for="GroupInfo.SelectedAppointmentDay" value="@x.TimeSlot" name="SelectedTimeSlot" readonly hidden >
+                                        <input class="btn btn-info" type="submit" value="Select Time" id="submit" />
+                                    </form>
+                                    <br/>
+
+                                                                  
+                                }
+                            
+
                         }
-                    </table>
+                   
                 </div>
             </div>
         </div>
@@ -233,19 +281,28 @@
             </div>
 
             <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                <div class="card-body">
-                    <table>
+                <div class="card-body" style="column-count:2">
+                   
                         @foreach (var x in Model.TimeSlots)
                         {
-                            @if (x.TimeSlotDay == "Saturday")
-                            {
-                                <tr>
-                                    <td>@x.TimeSlotTime</td>
-                                    <td><button class="btn-primary">Submit</button></td>
-                                </tr>
-                            }
+                            
+                                @if (x.TimeSlot.ToString("d") == "3/27/2021")
+                                {
+                                
+                                    <form asp-action="TourSummary" method="post">
+                                        <label asp-for="GroupInfo.SelectedAppointmentDay">@x.TimeSlot.ToShortTimeString()</label>
+                                        <!--You can unhide this... it just shows the date multiple times, not super necessary-->
+                                        <input asp-for="GroupInfo.SelectedAppointmentDay" value="@x.TimeSlot" name="SelectedTimeSlot" readonly hidden >
+                                        <input class="btn btn-info" type="submit" value="Select Time" id="submit" />
+                                    </form>
+                                    <br/>
+
+                                                                  
+                                }
+                            
+
                         }
-                    </table>
+                   
                 </div>
             </div>
         </div>
@@ -260,19 +317,28 @@
             </div>
 
             <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-                <div class="card-body">
-                    <table>
+                <div class="card-body" style="column-count:2">
+                   
                         @foreach (var x in Model.TimeSlots)
                         {
-                            @if (x.TimeSlotDay == "Sunday")
-                            {
-                                <tr>
-                                    <td>@x.TimeSlotTime</td>
-                                    <td><button class="btn-primary">Submit</button></td>
-                                </tr>
-                            }
+                            
+                                @if (x.TimeSlot.ToString("d") == "3/28/2021")
+                                {
+                                
+                                    <form asp-action="TourSummary" method="post">
+                                        <label asp-for="GroupInfo.SelectedAppointmentDay">@x.TimeSlot.ToShortTimeString()</label>
+                                        <!--You can unhide this... it just shows the date multiple times, not super necessary-->
+                                        <input asp-for="GroupInfo.SelectedAppointmentDay" value="@x.TimeSlot" name="SelectedTimeSlot" readonly hidden >
+                                        <input class="btn btn-info" type="submit" value="Select Time" id="submit" />
+                                    </form>
+                                    <br/>
+
+                                                                  
+                                }
+                            
+
                         }
-                    </table>
+                   
                 </div>
             </div>
         </div>
