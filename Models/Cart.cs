@@ -38,6 +38,7 @@ namespace TempleToursProject.Models
         {
             public int CartLineID { get; set; }
             public GroupInfo GroupInfo { get; set; }
+            public TimeSlots TimeSlots { get; set; }
             public int Quantity { get; set; }
         }
 
