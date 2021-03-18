@@ -37,11 +37,10 @@ namespace TempleToursProject.Controllers
         [HttpGet]
         public IActionResult Tours()
         {
-
-
-
-
-            return View();
+            return View(new GroupTimeSlotCombo
+            {
+                TimeSlots = _repository.TimeSlots
+            });
         }
 
         [HttpPost]

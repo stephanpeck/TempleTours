@@ -16,5 +16,7 @@ namespace TempleToursProject.Models
         public string TimeSlotTime { get; set; }
 
         public bool Scheduled { get; set; } = false;
+
+
     }
 }

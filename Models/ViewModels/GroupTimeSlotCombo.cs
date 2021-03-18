@@ -8,6 +8,6 @@ namespace TempleToursProject.Models.ViewModels
     public class GroupTimeSlotCombo
     {
         public GroupInfo GroupInfo { get; set; }
-        public TimeSlots TimeSlots { get; set; }
+        public IEnumerable<TimeSlots> TimeSlots { get; set; }
     }
 }
