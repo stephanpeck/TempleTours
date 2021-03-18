@@ -265,17 +265,10 @@ C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\scopedcss\b
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.TagHelpers.input.cache
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.TagHelpers.output.cache
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.RazorCoreGenerate.cache
-C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Pages\Buy.cshtml.g.cs
-C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_CartLayout.cshtml.g.cs
-C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
-C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Home\Tours.cshtml.g.cs
-C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CartSummary\Default.cshtml.g.cs
-C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\NavigationMenu\Default.cshtml.g.cs
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Shared\TourSummary.cshtml.g.cs
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -601,3 +594,4 @@ C:\Users\kaden\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProje
 C:\Users\kaden\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.dll
 C:\Users\kaden\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.pdb
 C:\Users\kaden\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.genruntimeconfig.cache
+C:\Users\Joshie Poo\source\repos\TempleTours\obj\Debug\netcoreapp3.1\Razor\Views\Home\TourSummary.cshtml.g.cs
