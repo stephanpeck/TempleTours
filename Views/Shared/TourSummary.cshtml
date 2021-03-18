@@ -12,13 +12,9 @@
 @model TempleToursProject.Models.GroupInfo
 
 
-
-
 <form id="@Model.GroupInfoId" asp-action="ScheduledTours" method="post">
-    <div asp-validation-summary="All"></div>
-
     <!--Submitter Name-->
-    
+
     <input class="form-control" style="width:30%;" type="text" id="name" asp-for="@Model.GroupInfoId" required hidden><br><br>
 
     <!--Restaurant Name-->
@@ -28,7 +24,7 @@
 
     <!--favoriteDish-->
     <label asp-for="@Model.GroupSize"><b>Group Size:</b></label>
-    <input class="form-control" style="width:30%;" type="text" id="groupSize" asp-for="@Model.GroupSize" placeholder="3" min="1" max="1000" required><br><br>
+    <input class="form-control" style="width:30%;" type="number" id="groupSize" asp-for="@Model.GroupSize" placeholder="#" min="1" max="50" required><br><br>
 
 
     <label asp-for="@Model.Email"><b>Email:</b></label>
@@ -50,7 +46,9 @@
     <!--Submit-->
     <input class="btn btn-info" type="submit" value="Confirm Tour" id="submit" />
 
+
 </form>
 
+<div asp-validation-summary="All" class="text-danger"></div>
 
 

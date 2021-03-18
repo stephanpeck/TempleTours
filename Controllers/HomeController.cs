@@ -17,11 +17,9 @@ namespace TempleToursProject.Controllers
 {
     public class HomeController : Controller
     {
-        //
+        //initialize the context object to reference the context db
         private TourDbContext context { get; set; }
         
-
-
         private readonly ILogger<HomeController> _logger;
 
         private ITourRepository _repository;
@@ -30,7 +28,7 @@ namespace TempleToursProject.Controllers
         public int PageSize = 5;
 
 
-        //constructor
+        //constructor that gets the repository and context db's
         public HomeController(ILogger<HomeController> logger, ITourRepository repository, TourDbContext ctx)
         {
             _logger = logger;
@@ -75,8 +73,6 @@ namespace TempleToursProject.Controllers
             {
                 SelectedAppointmentDay = SelectedTimeSlot.ToShortDateString(),
                 SelectedAppointmentTime = SelectedTimeSlot.ToShortTimeString()
-
-
             });
         }
 
@@ -88,21 +84,15 @@ namespace TempleToursProject.Controllers
         }
 
 
-
         [HttpPost]
         public IActionResult ScheduledTours(GroupInfo thisgroup)
         {
-            
-
             if (ModelState.IsValid)
             {
                 context.GroupInfo.Add(thisgroup);
                 context.SaveChanges();
                 return View(
-                
-
-                    context.GroupInfo
-                        
+                    context.GroupInfo 
                 );
             }
             else
@@ -112,31 +102,6 @@ namespace TempleToursProject.Controllers
 
         }
 
-        //if no page parameter is passed in, set to 1
-        //public IActionResult Tours(string category, int pageNum = 1)
-        //{
-        //    //This is a query written in Linq (which we have imported above)
-        //    return View(new TourListViewModel
-        //    {
-        //        BookModels = _repository.Books
-        //        //if category is null, then there won't be anything in category. If someone has passed in a category, then it won't be null. So this covers everything
-        //        .Where(p => category == null || p.Category == category)
-        //        .OrderBy(p => p.BookID)
-        //        .Skip((pageNum - 1) * PageSize)
-        //        .Take(PageSize)
-
-        //        ,
-        //        PagingInfo = new PagingInfo
-        //        {
-        //            CurrentPage = pageNum,
-        //            ItemsPerPage = PageSize,
-        //            TotalNumItems = category == null ? _repository.Books.Count() :
-        //                _repository.Books.Where (x => x.Category == category).Count()
-        //        },
-        //        CurrentCategory = category
-        //    });
-
-        //}
 
         public IActionResult Privacy()
         {
