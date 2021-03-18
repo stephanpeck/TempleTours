@@ -8,6 +8,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using TempleToursProject.Models.ViewModels;
 using TempleToursProject.Models;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 
 
 //Home controller
@@ -15,7 +17,10 @@ namespace TempleToursProject.Controllers
 {
     public class HomeController : Controller
     {
-        private TourDbContext context;
+        //
+        private TourDbContext context { get; set; }
+        
+
 
         private readonly ILogger<HomeController> _logger;
 
@@ -24,10 +29,13 @@ namespace TempleToursProject.Controllers
         //sets the number of items per page returned (5 books per page)
         public int PageSize = 5;
 
-        public HomeController(ILogger<HomeController> logger, ITourRepository repository)
+
+        //constructor
+        public HomeController(ILogger<HomeController> logger, ITourRepository repository, TourDbContext ctx)
         {
             _logger = logger;
             _repository = repository;
+            context = ctx;
         }
         // Loads the index view and sends the book repository along with it in the form of a model so that it can be used in the cshtml page
 
@@ -43,17 +51,20 @@ namespace TempleToursProject.Controllers
             {
                 TimeSlots = _repository.TimeSlots
                     .OrderBy(p => p.TimeSlot)
+                    .Where(p => p.Scheduled == false)
             });
         }
 
 
         //timeSlot is posted from Tour View
         [HttpPost]
-        public IActionResult TourSummary(DateTime SelectedTimeSlot)
+        public IActionResult TourSummary(DateTime SelectedTimeSlot, int TimeSlotId)
         {
+            //_repository.TimeSlots.TimeSlotId
 
             return View(new GroupInfo
             {
+
                 SelectedAppointmentDay = SelectedTimeSlot.ToShortDateString(),
                 SelectedAppointmentTime = SelectedTimeSlot.ToShortTimeString()
 
@@ -62,15 +73,29 @@ namespace TempleToursProject.Controllers
         }
 
 
-        [HttpPost]
-        public IActionResult ScheduledTours(GroupInfo group)
+        [HttpGet]
+        public IActionResult ScheduledTours()
         {
+            return View(context.GroupInfo);
+        }
+
+
+
+        [HttpPost]
+        public IActionResult ScheduledTours(GroupInfo thisgroup)
+        {
+            
+
             if (ModelState.IsValid)
             {
-                group = new GroupInfo();
-                context.GroupInfo.Add(group);
+                context.GroupInfo.Add(thisgroup);
                 context.SaveChanges();
-                return RedirectToAction("ScheduledTours");
+                return View(
+                
+
+                    context.GroupInfo
+                        
+                );
             }
             else
             {
