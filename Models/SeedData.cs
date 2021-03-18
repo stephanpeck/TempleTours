@@ -29,642 +29,553 @@ namespace TempleToursProject.Models
                 context.TimeSlots.AddRange(
                     new TimeSlots
                     {
-                        TimeSlotDay = "Monday",
-                        TimeSlotTime = "8:00 am",
+                        TimeSlot = new DateTime(2021, 3, 22, 8, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Monday",
-                        TimeSlotTime = "9:00 am",
+                        TimeSlot = new DateTime(2021, 3, 22, 9, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Monday",
-                        TimeSlotTime = "10:00 am",
+                        TimeSlot = new DateTime(2021, 3, 22, 10, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Monday",
-                        TimeSlotTime = "11:00 am",
+                        TimeSlot = new DateTime(2021, 3, 22, 11, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Monday",
-                        TimeSlotTime = "12:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 22, 12, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Monday",
-                        TimeSlotTime = "1:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 22, 13, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Monday",
-                        TimeSlotTime = "2:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 22, 14, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Monday",
-                        TimeSlotTime = "3:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 22, 15, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Monday",
-                        TimeSlotTime = "4:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 22, 16, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Monday",
-                        TimeSlotTime = "5:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 22, 17, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Monday",
-                        TimeSlotTime = "6:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 22, 18, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Monday",
-                        TimeSlotTime = "7:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 22, 19, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Monday",
-                        TimeSlotTime = "8:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 22, 20, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Tuesday",
-                        TimeSlotTime = "8:00 am",
+                        TimeSlot = new DateTime(2021, 3, 23, 8, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Tuesday",
-                        TimeSlotTime = "9:00 am",
+                        TimeSlot = new DateTime(2021, 3, 23, 9, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Tuesday",
-                        TimeSlotTime = "10:00 am",
+                        TimeSlot = new DateTime(2021, 3, 23, 10, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Tuesday",
-                        TimeSlotTime = "11:00 am",
+                        TimeSlot = new DateTime(2021, 3, 23, 11, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Tuesday",
-                        TimeSlotTime = "12:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 23, 12, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Tuesday",
-                        TimeSlotTime = "1:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 23, 13, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Tuesday",
-                        TimeSlotTime = "2:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 23, 14, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Tuesday",
-                        TimeSlotTime = "3:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 23, 15, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Tuesday",
-                        TimeSlotTime = "4:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 23, 16, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Tuesday",
-                        TimeSlotTime = "5:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 23, 17, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Tuesday",
-                        TimeSlotTime = "6:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 23, 18, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Tuesday",
-                        TimeSlotTime = "7:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 23, 19, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Tuesday",
-                        TimeSlotTime = "8:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 23, 20, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Wednesday",
-                        TimeSlotTime = "8:00 am",
+                        TimeSlot = new DateTime(2021, 3, 24, 8, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Wednesday",
-                        TimeSlotTime = "9:00 am",
+                        TimeSlot = new DateTime(2021, 3, 24, 9, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Wednesday",
-                        TimeSlotTime = "10:00 am",
+                        TimeSlot = new DateTime(2021, 3, 24, 10, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Wednesday",
-                        TimeSlotTime = "11:00 am",
+                        TimeSlot = new DateTime(2021, 3, 24, 11, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Wednesday",
-                        TimeSlotTime = "12:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 24, 12, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Wednesday",
-                        TimeSlotTime = "1:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 24, 13, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Wednesday",
-                        TimeSlotTime = "2:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 24, 14, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Wednesday",
-                        TimeSlotTime = "3:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 24, 15, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Wednesday",
-                        TimeSlotTime = "4:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 24, 16, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Wednesday",
-                        TimeSlotTime = "5:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 24, 17, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Wednesday",
-                        TimeSlotTime = "6:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 24, 18, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Wednesday",
-                        TimeSlotTime = "7:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 24, 19, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Wednesday",
-                        TimeSlotTime = "8:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 24, 20, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Thursday",
-                        TimeSlotTime = "8:00 am",
+                        TimeSlot = new DateTime(2021, 3, 25, 8, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Thursday",
-                        TimeSlotTime = "9:00 am",
+                        TimeSlot = new DateTime(2021, 3, 25, 9, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Thursday",
-                        TimeSlotTime = "10:00 am",
+                        TimeSlot = new DateTime(2021, 3, 25, 10, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Thursday",
-                        TimeSlotTime = "11:00 am",
+                        TimeSlot = new DateTime(2021, 3, 25, 11, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Thursday",
-                        TimeSlotTime = "12:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 25, 12, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Thursday",
-                        TimeSlotTime = "1:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 25, 13, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Thursday",
-                        TimeSlotTime = "2:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 25, 14, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Thursday",
-                        TimeSlotTime = "3:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 25, 15, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Thursday",
-                        TimeSlotTime = "4:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 25, 16, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Thursday",
-                        TimeSlotTime = "5:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 25, 17, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Thursday",
-                        TimeSlotTime = "6:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 25, 18, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Thursday",
-                        TimeSlotTime = "7:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 25, 19, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Thursday",
-                        TimeSlotTime = "8:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 25, 20, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Friday",
-                        TimeSlotTime = "8:00 am",
+                        TimeSlot = new DateTime(2021, 3, 26, 8, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Friday",
-                        TimeSlotTime = "9:00 am",
+                        TimeSlot = new DateTime(2021, 3, 26, 9, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Friday",
-                        TimeSlotTime = "10:00 am",
+                        TimeSlot = new DateTime(2021, 3, 26, 10, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Friday",
-                        TimeSlotTime = "11:00 am",
+                        TimeSlot = new DateTime(2021, 3, 26, 11, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Friday",
-                        TimeSlotTime = "12:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 26, 12, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Friday",
-                        TimeSlotTime = "1:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 26, 13, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Friday",
-                        TimeSlotTime = "2:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 26, 14, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Friday",
-                        TimeSlotTime = "3:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 26, 15, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Friday",
-                        TimeSlotTime = "4:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 26, 16, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Friday",
-                        TimeSlotTime = "5:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 26, 17, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Friday",
-                        TimeSlotTime = "6:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 26, 18, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Friday",
-                        TimeSlotTime = "7:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 26, 19, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Friday",
-                        TimeSlotTime = "8:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 26, 20, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Saturday",
-                        TimeSlotTime = "8:00 am",
+                        TimeSlot = new DateTime(2021, 3, 27, 8, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Saturday",
-                        TimeSlotTime = "9:00 am",
+                        TimeSlot = new DateTime(2021, 3, 27, 9, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Saturday",
-                        TimeSlotTime = "10:00 am",
+                        TimeSlot = new DateTime(2021, 3, 27, 10, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Saturday",
-                        TimeSlotTime = "11:00 am",
+                        TimeSlot = new DateTime(2021, 3, 27, 11, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Saturday",
-                        TimeSlotTime = "12:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 27, 12, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Saturday",
-                        TimeSlotTime = "1:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 27, 13, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Saturday",
-                        TimeSlotTime = "2:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 27, 14, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Saturday",
-                        TimeSlotTime = "3:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 27, 15, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Saturday",
-                        TimeSlotTime = "4:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 27, 16, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Saturday",
-                        TimeSlotTime = "5:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 27, 17, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Saturday",
-                        TimeSlotTime = "6:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 27, 18, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Saturday",
-                        TimeSlotTime = "7:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 27, 19, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Saturday",
-                        TimeSlotTime = "8:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 27, 20, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Sunday",
-                        TimeSlotTime = "8:00 am",
+                        TimeSlot = new DateTime(2021, 3, 28, 8, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Sunday",
-                        TimeSlotTime = "9:00 am",
+                        TimeSlot = new DateTime(2021, 3, 28, 9, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Sunday",
-                        TimeSlotTime = "10:00 am",
+                        TimeSlot = new DateTime(2021, 3, 28, 10, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Sunday",
-                        TimeSlotTime = "11:00 am",
+                        TimeSlot = new DateTime(2021, 3, 28, 11, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Sunday",
-                        TimeSlotTime = "12:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 28, 12, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Sunday",
-                        TimeSlotTime = "1:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 28, 13, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Sunday",
-                        TimeSlotTime = "2:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 28, 14, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Sunday",
-                        TimeSlotTime = "3:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 28, 15, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Sunday",
-                        TimeSlotTime = "4:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 28, 16, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Sunday",
-                        TimeSlotTime = "5:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 28, 17, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Sunday",
-                        TimeSlotTime = "6:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 28, 18, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Sunday",
-                        TimeSlotTime = "7:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 28, 19, 0, 0),
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
-                        TimeSlotDay = "Sunday",
-                        TimeSlotTime = "8:00 pm",
+                        TimeSlot = new DateTime(2021, 3, 28, 20, 0, 0),
                         Scheduled = false
                     }
+
                 );
 
+                //Save changes to the database
                 context.SaveChanges();
 
             }
