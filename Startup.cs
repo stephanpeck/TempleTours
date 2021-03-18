@@ -77,19 +77,6 @@ namespace TempleToursProject
             //When searching for endpoints, if it hits one, it will go with that one. It will not continue searching for routes
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute("catpage",
-                    "{category}/{pageNum:int}",
-                    new { Controller = "Home", action = "Index" }
-                    );
-
-                endpoints.MapControllerRoute("category",
-                    "{category}",
-                    new { Controller = "Home", action = "Index", pageNum = 1 }
-                    );
-
-                endpoints.MapControllerRoute("pagination",
-                    "P/{pageNum}",
-                    new { Controller = "Home", action = "Index" });
 
 
                 //Default endpoint if there are no parameters
