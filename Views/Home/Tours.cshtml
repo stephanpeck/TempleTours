@@ -8,7 +8,7 @@
     ViewBag.Background = "/img/garden.jpg";
 }
 
-@model GroupInfo
+@model GroupTimeSlotCombo
 <!--C# code goes up here ^^ you can dynamically change the title and top image on a per page basis-->
 <!--Stephan Peck-->
 <!--Assignment 8-->
@@ -36,6 +36,16 @@
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                     <table>
+                        @foreach (var x in Model.TimeSlots)
+                        {
+                            @if (x.TimeSlotDay == "Monday")
+                            {
+                            <tr>
+                                <td>@x.TimeSlotTime</td>
+                                <td><button class="btn-primary">Submit</button></td>
+                            </tr>
+                            }
+                        }
                         <tr>
                             <td>8:00am</td>
                             <td><button class="btn-primary">Submit</button></td>
@@ -263,36 +273,36 @@
         <table>
             <tr>
                 <th>
-                    <label asp-for="GroupName" class="text-dark font-weight-bolder" style="font-size:20px">*Name of Group:</label>
+                    <label asp-for="GroupInfo.GroupName" class="text-dark font-weight-bolder" style="font-size:20px">*Name of Group:</label>
                 </th>
                 <td>
-                    <input asp-for="GroupName" type="text" placeholder="Group name..." style="border-radius:20px"/>
+                    <input asp-for="GroupInfo.GroupName" type="text" placeholder="Group name..." style="border-radius:20px"/>
                 </td>
             </tr>
             <tr>
                 <th>
-                    <label asp-for="GroupSize" class="text-dark font-weight-bolder" style="font-size:20px">*Size of Group:</label>
+                    <label asp-for="GroupInfo.GroupSize" class="text-dark font-weight-bolder" style="font-size:20px">*Size of Group:</label>
 
                 </th>
                 <td>
-                    <input asp-for="GroupSize" type="number" placeholder="Group size..." style="border-radius:20px"/>
+                    <input asp-for="GroupInfo.GroupSize" type="number" placeholder="Group size..." style="border-radius:20px"/>
 
                 </td>
             </tr>
             <tr>
                 <th>
-                    <label asp-for="Email" class="text-dark font-weight-bolder" style="font-size:20px">*Email Address:</label>
+                    <label asp-for="GroupInfo.GroupSize" class="text-dark font-weight-bolder" style="font-size:20px">*Email Address:</label>
                 </th>
                 <td>
-                    <input asp-for="Email" type="text" default=null placeholder="Email..." style="border-radius:20px"/>
+                    <input asp-for="GroupInfo.Email" type="text" default=null placeholder="Email..." style="border-radius:20px"/>
                 </td>
             </tr>
             <tr>
                 <th>
-                    <label asp-for="Phone" class="text-dark font-weight-bolder" style="font-size:20px">&nbsp Phone:</label>
+                    <label asp-for="GroupInfo.Phone" class="text-dark font-weight-bolder" style="font-size:20px">&nbsp Phone:</label>
                 </th>
                 <td>
-                    <input asp-for="Phone" type="text" placeholder="Phone..." style="border-radius:20px"/>
+                    <input asp-for="GroupInfo.Email" type="text" placeholder="Phone..." style="border-radius:20px"/>
                 </td>
             </tr>
             <tr><th><br /></th></tr>
