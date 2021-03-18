@@ -16,7 +16,8 @@ namespace TempleToursProject.Migrations
                     GroupSize = table.Column<int>(nullable: false),
                     Email = table.Column<string>(nullable: false),
                     Phone = table.Column<string>(nullable: true),
-                    SelectedAppointment = table.Column<string>(nullable: true)
+                    SelectedAppointmentDay = table.Column<string>(nullable: true),
+                    SelectedAppointmentTime = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
