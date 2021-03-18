@@ -16,6 +16,7 @@ namespace TempleToursProject.Models
         [Required]
         public string GroupName { get; set; }
 
+        //Only allows group of size 1-50 so that the tour guides don't get overwhelmed
         [Required]
         [Range(1,50)]
         public int GroupSize { get; set; }
@@ -23,7 +24,6 @@ namespace TempleToursProject.Models
         [Required]
         public string Email { get; set; }
 
-        //Phone is the only property that is not required to be entered.
         public string Phone { get; set; }
 
         public string SelectedAppointmentDay { get; set; }

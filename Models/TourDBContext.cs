@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 //DBContext page
 namespace TempleToursProject.Models
 {
-    
+    //TourDbContext inherits from the DbContext
     public class TourDbContext : DbContext
     {
         public TourDbContext (DbContextOptions<TourDbContext> options) : base (options)

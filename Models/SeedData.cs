@@ -15,7 +15,7 @@ namespace TempleToursProject.Models
 
             TourDbContext context = application.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<TourDbContext>();
 
-            //are there any migrations that need to happen?
+            //make sure the database is up to date with any migrations
 
             if(context.Database.GetPendingMigrations().Any())
             {
@@ -25,7 +25,7 @@ namespace TempleToursProject.Models
             //if nothing loaded in the database yet, we are going to add some info in
             if(!context.TimeSlots.Any())
             {
-
+                //seed data for all of the possible time slots
                 context.TimeSlots.AddRange(
                     new TimeSlots
                     {

@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 // EFTourRepository
 namespace TempleToursProject.Models
 {
+    //EFTourRepository inherits from ITourRepository
     public class EFTourRepository : ITourRepository
     {
+        //Set a private instance of TourDbContext
         private TourDbContext _context;
 
         //Constructor
