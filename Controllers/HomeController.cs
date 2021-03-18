@@ -60,11 +60,19 @@ namespace TempleToursProject.Controllers
         [HttpPost]
         public IActionResult TourSummary(DateTime SelectedTimeSlot)
         {
-            //_repository.TimeSlots.TimeSlotId
+            //reference the selected time slot variable in the context db
+            var result = context.TimeSlots.SingleOrDefault(t => t.TimeSlot == SelectedTimeSlot);
+            //validate that it's not empty
+            if (result != null)
+            {
+                //change scheduled to be true so it doesn't show up on the available times list
+                result.Scheduled = true;
+                context.SaveChanges();
+            }
+
 
             return View(new GroupInfo
             {
-
                 SelectedAppointmentDay = SelectedTimeSlot.ToShortDateString(),
                 SelectedAppointmentTime = SelectedTimeSlot.ToShortTimeString()
 
