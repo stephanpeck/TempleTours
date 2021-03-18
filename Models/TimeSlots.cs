@@ -11,10 +11,10 @@ namespace TempleToursProject.Models
         [Key]
         public int TimeSlotsId { get; set; }
 
-        public string TimeSlotDay { get; set; }
-
-        public string TimeSlotTime { get; set; }
+        public DateTime TimeSlot { get; set; }
 
         public bool Scheduled { get; set; } = false;
+
+
     }
 }

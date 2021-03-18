@@ -1,44 +1,49 @@
 ﻿
 
+@{
+    ViewBag.pageType = "profile-page";
+    ViewBag.Title = "Confirm Your Tour of the Temple Grounds";
+    ViewBag.SubTitle = "";
+    ViewBag.Background = "/img/garden.jpg";
+}
 
-@*@model GroupInfo
-@model TimeSlots*@
 
-@model GroupTimeSlotCombo
 
+@model TempleToursProject.Models.GroupInfo
 
 
 
 <div asp-validation-summary="All"></div>
-<form id="@Model.GroupInfo.GroupInfoId" asp-page="/Buy" method="post">
+<form id="@Model.GroupInfoId" asp-action="ScheduledTours" method="post">
+    @*asp-page="/Buy"*@
 
     <!--Submitter Name-->
-    <label for="name" asp-for="GroupInfo.GroupInfoId"><b>Your Name:</b></label>
-    <input class="form-control" style="width:30%;" type="text" id="name" asp-for="GroupInfo.GroupInfoId" placeholder="Buck Wheat" required><br><br>
+    
+    <input class="form-control" style="width:30%;" type="text" id="name" asp-for="@Model.GroupInfoId" required hidden><br><br>
 
     <!--Restaurant Name-->
-    <label for="restaurantName" asp-for="GroupInfo.GroupName"><b>Group Name:</b></label>
-    <input class="form-control" style="width:30%;" type="text" id="groupName" asp-for="GroupInfo.GroupName" placeholder="Chick-Fil-A" required><br><br>
+    <label asp-for="@Model.GroupName"><b>Group Name:</b></label>
+    <input class="form-control" style="width:30%;" type="text" id="groupName" asp-for="@Model.GroupName" placeholder="Relief Society Gang" required><br><br>
 
 
     <!--favoriteDish-->
-    <label for="favoriteDish" asp-for="GroupInfo.GroupSize"><b>Group Size:</b></label>
-    <input class="form-control" style="width:30%;" type="text" id="groupSize" asp-for="GroupInfo.GroupSize" placeholder="Chicken Sandwhich" required><br><br>
+    <label asp-for="@Model.GroupSize"><b>Group Size:</b></label>
+    <input class="form-control" style="width:30%;" type="text" id="groupSize" asp-for="@Model.GroupSize" placeholder="3" min="1" max="1000" required><br><br>
 
 
-    <label for="favoriteDish" asp-for="GroupInfo.Email"><b>Email:</b></label>
-    <input class="form-control" style="width:30%;" type="text" id="email" asp-for="GroupInfo.Email" placeholder="Chicken Sandwhich" required><br><br>
+    <label asp-for="@Model.Email"><b>Email:</b></label>
+    <input class="form-control" style="width:30%;" type="text" id="email" asp-for="@Model.Email" placeholder="Spencer@Hilton.com" required><br><br>
 
     <!--phone-->
-    <label for="phone" asp-for="GroupInfo.Phone"><b>Phone Number:</b></label>
-    <input class="form-control" style="width:30%;" type="tel" id="phone" asp-for="GroupInfo.Phone" placeholder="801-555-5555" required><br><br>
+    <label asp-for="@Model.Phone"><b>Phone Number (Optional):</b></label>
+    <input class="form-control" style="width:30%;" type="tel" id="phone" asp-for="@Model.Phone" placeholder="801-555-5555"><br><br>
 
 
-    <label for="favoriteDish" asp-for="GroupInfo.SelectedAppointmentDay"><b>Selected Day:</b></label>
-    <input class="form-control" style="width:30%;" type="text" id="Time Slot" asp-for="GroupInfo.SelectedAppointmentDay" value="@Model.TimeSlots.TimeSlotDay" placeholder="8pm" required><br><br>
+    <label asp-for="@Model.SelectedAppointmentDay"><b>Selected Day:</b></label>
+    <input class="form-control" style="width:30%;" type="text" id="Time Slot" asp-for="@Model.SelectedAppointmentDay" value="@Model.SelectedAppointmentDay" placeholder="8pm" required readonly><br><br>
 
-    <label for="favoriteDish" asp-for="GroupInfo.SelectedAppointmentTime"><b>Selected Time:</b></label>
-    <input class="form-control" style="width:30%;" type="text" id="Time Slot" asp-for="GroupInfo.SelectedAppointmentTime" value="@Model.TimeSlots.TimeSlotDay" placeholder="8pm" required><br><br>
+    <label asp-for="@Model.SelectedAppointmentTime"><b>Selected Time:</b></label>
+    <input class="form-control" style="width:30%;" type="text" id="Time Slot" asp-for="@Model.SelectedAppointmentTime" value="@Model.SelectedAppointmentTime" placeholder="8pm" required readonly><br><br>
     <br>
 
 
@@ -46,3 +51,6 @@
     <input class="btn btn-info" type="submit" value="Confirm Tour" id="submit" />
 
 </form>
+
+
+

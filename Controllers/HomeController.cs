@@ -15,6 +15,8 @@ namespace TempleToursProject.Controllers
 {
     public class HomeController : Controller
     {
+        private TourDbContext context;
+
         private readonly ILogger<HomeController> _logger;
 
         private ITourRepository _repository;
@@ -37,19 +39,45 @@ namespace TempleToursProject.Controllers
         [HttpGet]
         public IActionResult Tours()
         {
-
-
-
-
-            return View();
+            return View(new GroupTimeSlotCombo
+            {
+                TimeSlots = _repository.TimeSlots
+                    .OrderBy(p => p.TimeSlot)
+            });
         }
+
+
+        //timeSlot is posted from Tour View
+        [HttpPost]
+        public IActionResult TourSummary(DateTime SelectedTimeSlot)
+        {
+
+            return View(new GroupInfo
+            {
+                SelectedAppointmentDay = SelectedTimeSlot.ToShortTimeString(),
+                SelectedAppointmentTime = SelectedTimeSlot.ToShortDateString()
+
+
+            }) ;
+        }
+
 
         [HttpPost]
-        public IActionResult TourSummary()
+        public IActionResult ScheduledTours(GroupInfo group)
         {
-            return View();
-        }
+            if (ModelState.IsValid)
+            {
+                group = new GroupInfo();
+                context.GroupInfo.Add(group);
+                context.SaveChanges();
+                return RedirectToAction("ScheduledTours");
+            }
+            else
+            {
+                return RedirectToAction();
+            }
 
+        }
 
         //if no page parameter is passed in, set to 1
         //public IActionResult Tours(string category, int pageNum = 1)
@@ -74,7 +102,7 @@ namespace TempleToursProject.Controllers
         //        },
         //        CurrentCategory = category
         //    });
-                
+
         //}
 
         public IActionResult Privacy()
