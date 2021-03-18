@@ -26,7 +26,9 @@ namespace TempleToursProject.Models
         //Phone is the only property that is not required to be entered.
         public string Phone { get; set; }
 
-        public string SelectedAppointment { get; set; }
+        public string SelectedAppointmentDay { get; set; }
+
+        public string SelectedAppointmentTime { get; set; }
 
     }
 }
