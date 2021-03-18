@@ -338,3 +338,4 @@ C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleTours
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.csproj.CopyComplete
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.genruntimeconfig.cache
 C:\Users\Joshie Poo\Source\Repos\TempleTours\obj\Debug\netcoreapp3.1\TempleToursProject.csprojAssemblyReference.cache
+C:\Users\Joshie Poo\Source\Repos\TempleTours\bin\Debug\netcoreapp3.1\package-lock.json
