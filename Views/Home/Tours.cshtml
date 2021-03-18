@@ -18,73 +18,6 @@
 
 @*@model TourListViewModel--------------------*@
 
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    
-
-    /* The popup form - hidden by default */
-    .form-popup {
-        display: none;
-        position: fixed;
-        bottom: 0;
-        right: 15px;
-        border: 3px solid #f1f1f1;
-        z-index: 9;
-    }
-
-    /* Add styles to the form container */
-    .form-container {
-        max-width: 300px;
-        padding: 10px;
-        background-color: white;
-    }
-
-        /* Full-width input fields */
-        .form-container input[type=text], .form-container input[type=password] {
-            width: 100%;
-            padding: 15px;
-            margin: 5px 0 22px 0;
-            border: none;
-            background: #f1f1f1;
-        }
-
-            /* When the inputs get focus, do something */
-            .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-                background-color: #ddd;
-                outline: none;
-            }
-
-        /* Set a style for the submit/login button */
-        .form-container .btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 16px 20px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            margin-bottom: 10px;
-            opacity: 0.8;
-        }
-
-        /* Add a red background color to the cancel button */
-        .form-container .cancel {
-            background-color: red;
-        }
-
-        /* Add some hover effects to buttons */
-        .form-container .btn:hover, .open-button:hover {
-            opacity: 1;
-        }
-</style>
-
-
 <div>
     <div id="accordion">
         @*Monday Card + times*@
@@ -345,72 +278,7 @@
     </div>
 </div>
 
-@*form that has all inputs and submit button*@
-<div class="form-popup" id="myForm">
-    <form asp-action="SignUp" method="post" class="form-container">
-        <table>
-            <tr>
-                <th>
-                    <label asp-for="GroupInfo.GroupName" class="text-dark font-weight-bolder" style="font-size:20px">*Name of Group:</label>
-                </th>
-                <td>
-                    <input asp-for="GroupInfo.GroupName" type="text" placeholder="Group name..." style="border-radius:20px" />
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label asp-for="GroupInfo.GroupSize" class="text-dark font-weight-bolder" style="font-size:20px">*Size of Group:</label>
 
-                </th>
-                <td>
-                    <input asp-for="GroupInfo.GroupSize" type="number" placeholder="Group size..." style="border-radius:20px" />
-
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label asp-for="GroupInfo.GroupSize" class="text-dark font-weight-bolder" style="font-size:20px">*Email Address:</label>
-                </th>
-                <td>
-                    <input asp-for="GroupInfo.Email" type="text" default=null placeholder="Email..." style="border-radius:20px" />
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label asp-for="GroupInfo.Phone" class="text-dark font-weight-bolder" style="font-size:20px">&nbsp Phone:</label>
-                </th>
-                <td>
-                    <input asp-for="GroupInfo.Email" type="text" placeholder="Phone..." style="border-radius:20px" />
-                </td>
-            </tr>
-            <tr><th><br /></th></tr>
-            <tr>
-                <th>
-                    <input class="btn btn-primary" type="submit" value="Submit" />
-                </th>
-                <th>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </th>
-            </tr>
-            <div asp-validation-summary="All" class="text-danger"></div>
-        </table>
-    </form>
-</div>
-
-<script>
-    function openForm() {
-        document.getElementById("myForm").style.display = "block";
-    }
-
-    function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-    }
-
-    function change(value) {
-        var title = document.getElementById('title');
-        title.innerHTML = value;
-    }
-</script>
 
 @*<div style="float:right" page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="btn"
     page-class-normal="btn-light" page-url-category="@Model.CurrentCategory"
