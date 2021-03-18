@@ -35,7 +35,10 @@ namespace TempleToursProject.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("SelectedAppointment")
+                    b.Property<string>("SelectedAppointmentDay")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SelectedAppointmentTime")
                         .HasColumnType("TEXT");
 
                     b.HasKey("GroupInfoId");

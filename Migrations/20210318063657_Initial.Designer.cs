@@ -8,7 +8,7 @@ using TempleToursProject.Models;
 namespace TempleToursProject.Migrations
 {
     [DbContext(typeof(TourDbContext))]
-    [Migration("20210317195250_Initial")]
+    [Migration("20210318063657_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,7 +37,10 @@ namespace TempleToursProject.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("SelectedAppointment")
+                    b.Property<string>("SelectedAppointmentDay")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SelectedAppointmentTime")
                         .HasColumnType("TEXT");
 
                     b.HasKey("GroupInfoId");

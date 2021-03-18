@@ -30,91 +30,91 @@ namespace TempleToursProject.Models
                     new TimeSlots
                     {
                         TimeSlotDay = "Monday",
-                        TimeSlotTime = "8:00 am",
+                        TimeSlotTime = "08:00",
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
                         TimeSlotDay = "Monday",
-                        TimeSlotTime = "9:00 am",
+                        TimeSlotTime = "09:00",
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
                         TimeSlotDay = "Monday",
-                        TimeSlotTime = "10:00 am",
+                        TimeSlotTime = "10:00",
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
                         TimeSlotDay = "Monday",
-                        TimeSlotTime = "11:00 am",
+                        TimeSlotTime = "11:00",
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
                         TimeSlotDay = "Monday",
-                        TimeSlotTime = "12:00 pm",
+                        TimeSlotTime = "12:00",
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
                         TimeSlotDay = "Monday",
-                        TimeSlotTime = "1:00 pm",
+                        TimeSlotTime = "13:00",
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
                         TimeSlotDay = "Monday",
-                        TimeSlotTime = "2:00 pm",
+                        TimeSlotTime = "14:00",
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
                         TimeSlotDay = "Monday",
-                        TimeSlotTime = "3:00 pm",
+                        TimeSlotTime = "15:00",
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
                         TimeSlotDay = "Monday",
-                        TimeSlotTime = "4:00 pm",
+                        TimeSlotTime = "16:00",
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
                         TimeSlotDay = "Monday",
-                        TimeSlotTime = "5:00 pm",
+                        TimeSlotTime = "17:00",
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
                         TimeSlotDay = "Monday",
-                        TimeSlotTime = "6:00 pm",
+                        TimeSlotTime = "18:00",
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
                         TimeSlotDay = "Monday",
-                        TimeSlotTime = "7:00 pm",
+                        TimeSlotTime = "19:00",
                         Scheduled = false
                     },
 
                     new TimeSlots
                     {
                         TimeSlotDay = "Monday",
-                        TimeSlotTime = "8:00 pm",
+                        TimeSlotTime = "20:00",
                         Scheduled = false
                     },
 
